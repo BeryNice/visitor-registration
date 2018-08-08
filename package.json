@@ -1,0 +1,15 @@
+{
+  "name": "registro-de-visitantes",
+  "version": "0.1.0",
+  "description": "registro de visitamtes\u001b[D\u001b[D\u001b[n\u001b[C\u001b[C\u001b[C, npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "Firebase",
+    "js"
+  ],
+  "author": "Linda Tableros, Génesis Mauries, Berenice Lemus",
+  "license": "ISC"
+}
