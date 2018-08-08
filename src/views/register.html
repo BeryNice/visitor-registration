@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container-fluid ">
+    <div class="container-fluid">
         <header>
             <div class="row">
                 <div class="col align-self-start">
@@ -26,19 +26,39 @@
             </div>
         </header>
 
-        <h3 class="text-center mb-5">Inicio Registro de Visitantes</h3>
+        <h3 class="mb-5">Inicio Registro de Visitantes</h3>
+        <form>
+            
 
-        <div class="container">
-            <div class="row ">
-                <div class="col-6 justify-content-md-center">
-                    <button class="btn btn-primary">Ver Información y estadísticas</button>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">Empresa</label>
+                    <input type="text" class="form-control" id="inputCity">
                 </div>
-                <div class="col-6 align-items-center">
-                    <a class="btn btn-primary" href="register.html">Registrar Visitante</a>
+                <div class="form-group col-md-6">
+                    <label for="inputState">Piso</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Elige un piso</option>
+                        <option>...</option>
+                    </select>
                 </div>
             </div>
-        </div>
+            
+        </form>
+        <footer>
+            <div class="row mt-5">
+                <div class="col">
+                    <a class="btn btn-primary" href="homepage.html">Anterior</a>
+
+                </div>
+                <div class="col">
+                    <a class="btn btn-primary" href="#">Siguiente</a>
+                </div>
+            </div>
+        </footer>
     </div>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
