@@ -6,7 +6,7 @@ const inputName = document.getElementById('inputName');
 const inputEmail = document.getElementById('inputEmail');
 const clock = document.getElementById('date');
 const date = new Date();
-clock.innerHTML = date.toUTCString();
+clock.innerHTML = date.toLocaleString();
 
 // Captura de fotografia
 
@@ -72,29 +72,34 @@ const registerBtn = document.getElementById('registerBtn');
 
 // generando funcion para enviar datos a base de datos(Firestore)
 registerBtn.addEventListener('click', sendData = () =>{
-  let floor = inputFloor.value;
-  let company = inputCompany.value;
-  let host = inputHost.value;
-  let name = inputName.value;
-  let email = inputEmail.value;
-  let clock = date;
+  if (confirm('¿Tus datos son correctos?') === true) {
+    let floor = inputFloor.value;
+    let company = inputCompany.value;
+    let host = inputHost.value;
+    let name = inputName.value;
+    let email = inputEmail.value;
+    let clock = date;
+
   
-  
-  // Add a new document with a generated id.
-  db.collection('newVisitor').add({
-    floor,
-    company,
-    host,
-    name,
-    email,
-    clock
-  })
-    .then(function(docRef) {
-      console.log('Document written with ID: ', docRef.id);
+    // Add a new document with a generated id.
+    db.collection('newVisitor').add({
+      floor,
+      company,
+      host,
+      name,
+      email,
+      clock
     })
-    .catch(function(error) {
-      console.error('Error adding document: ', error);
-    });
+      .then(function(docRef) {
+        newDoc();
+      })
+      .catch(function(error) {
+        console.error('Error adding document: ', error);
+      });
+  }
 });
 
 
+newDoc = () => {
+  window.location.assign('../views/print.html');
+};
