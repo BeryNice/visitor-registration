@@ -1,44 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
-  crossorigin="anonymous">
-  <title>Administración</title>
-</head>
-<body>
-      <!-- LOGIN -->
-        <div class="container-fluid" id= "divLogin">
-            <h1 class="text-center mb-5">Inicia Sesión</h1>
-            <div class="row justify-content-md-center">
-                <form>
-                    <div class="form-group">
-                        <label for="inputAdmin">Usuario</label>
-                        <input type="text" class="form-control" id="inputAdmin" placeholder="Nombre de usuario">
-                    </div>
-                    <div class="form-group">
-                        <label for="exampleInputPassword1">Contraseña</label>
-                        <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
-                    </div>
-                    <button class="btn btn-primary" id= "btnLogin">Ingresar</button>
-                </form>
-            </div>
-        </div>
-        <!-- LOGIN END -->
 
-        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-            <script src="../js/admin.js"></script>     
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <title>Administración</title>
+</head>
+
+<body>
+    <!-- LOGIN -->
+
+    <div class="container-fluid " id="divLogin">
+        <h1 class="text-center mb-5">Inicia Sesión</h1>
+        <div class="row justify-content-md-center">
+            <form>
+                <div class="form-group">
+                    <label for="inputAdmin">Usuario</label>
+                    <input type="text" class="form-control" id="inputAdmin" placeholder="Nombre de usuario">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                </div>
+                <button type="button" class="btn btn-primary" id="btnLogin">Ingresar</button>
+            </form>
+        </div>
+    </div>
+    <!-- LOGIN END -->
+    <main>
+        <div id="container" class="d-none">
+            <div class="col-6 justify-content-md-center">
+                <a class="btn btn-primary" href="../index.html">Log out</a>
+            </div>
+            <table class="table table-striped col-8 justify-content-md-center centered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Hora de Check-In</th>
+                        <th scope="col">Nombre del visitante</th>
+                        <th scope="col">Correo electrónico</th>
+                        <th scope="col">Piso</th>
+                        <th scope="col">Empresa</th>
+                        <th scope="col">Anfitrión</th>
+                    </tr>
+                </thead>
+                <tbody id="table">
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="../js/credentials.js"></script>
+    <script src="../js/admin.js"></script>
+
 </body>
+
 </html>
