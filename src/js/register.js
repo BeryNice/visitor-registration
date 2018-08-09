@@ -6,7 +6,6 @@ const inputName = document.getElementById('inputName');
 const inputEmail = document.getElementById('inputEmail');
 const clock = document.getElementById('date');
 const date = new Date();
-
 clock.innerHTML = date.toUTCString();
 
 // Captura de fotografia
@@ -78,6 +77,7 @@ registerBtn.addEventListener('click', sendData = () =>{
   let host = inputHost.value;
   let name = inputName.value;
   let email = inputEmail.value;
+  let clock = date;
   
   
   // Add a new document with a generated id.
@@ -87,6 +87,7 @@ registerBtn.addEventListener('click', sendData = () =>{
     host,
     name,
     email,
+    clock
   })
     .then(function(docRef) {
       console.log('Document written with ID: ', docRef.id);
