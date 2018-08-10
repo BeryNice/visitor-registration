@@ -37,6 +37,7 @@ Objetivos secundarios:
 * Una vez almacenados los libros de visita pueden ocupar un gran espacio
 * No se puede detectar de manera automática visitantes no gratos
 * No se cuentan con estadísticas de afluencia de visitantes
+* La gran mayoría de los inquilinos del coworking cuentan con una idea de negocio que gira entorno al mundo digital, lo que obliga al coworking a modernizar y digitalizar sus porcesos de registro.
 
 ## Nuestra propuesta
 
@@ -47,12 +48,12 @@ Objetivos secundarios:
 ![Benchmark-registro](src/assets/images/benchmark-registro.png)
 
 
-### Quién utiliza el registro de visitantes
+## Quién utiliza el registro de visitantes
 
-## Tipos de Usuarios del Coworking
+### Tipos de Usuarios del Coworking
 
 
-### Usuarios visitantes
+#### Usuarios visitantes
 
 * **Socios comerciales** que se reúnen con usuarios de coworking, son jóvenes tienen distintas actividades agendadas durante el día, son nativos digitales tienen un smartphone siempre disponible
 * **Postulantes a puestos de empleo** Acuden a entrevistas de trabajo
@@ -61,13 +62,13 @@ Objetivos secundarios:
 | -------------         |:-------------:| 
 
 
-### Usuarios Facilitadores
+#### Usuarios Facilitadores
 
 * Personal de Seguridad/Vigilancia
 * Recepcionistas
 * Administradores de Coworking
 
-### Usuarios Coworkers/Inquilinos
+#### Usuarios Coworkers/Inquilinos
 
 * Emprendedores
 * Profesionistas independientes
