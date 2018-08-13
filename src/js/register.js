@@ -81,23 +81,25 @@ registerBtn.addEventListener('click', sendData = () =>{
     let name = inputName.value;
     let email = inputEmail.value;
     let clock = date;
-
-  
+    if (host === '' || company === '' || name === '' || email === '') {
+      alert('¡Todos los campos deben estar llenos!');
+    } else {
     // Add a new document with a generated id.
-    db.collection('newVisitor').add({
-      floor,
-      company,
-      host,
-      name,
-      email,
-      clock
-    })
-      .then(function(docRef) {
-        newDoc();
+      db.collection('newVisitor').add({
+        floor,
+        company,
+        host,
+        name,
+        email,
+        clock
       })
-      .catch(function(error) {
-        console.error('Error adding document: ', error);
-      });
+        .then(function(docRef) {
+          newDoc();
+        })
+        .catch(function(error) {
+          console.error('Error adding document: ', error);
+        });
+    }  
   }
 });
 
