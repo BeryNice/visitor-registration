@@ -52,7 +52,7 @@ video.addEventListener('canplay', function(ev) {
     streaming = true;
   }
 }, false);
- 
+
 // Obtiene dimensiones y convierte imagen a png
 function takepicture() {
   canvas.width = width;
@@ -60,7 +60,6 @@ function takepicture() {
   canvas.getContext('2d').drawImage(video, 0, 0, width, height);
   var data = canvas.toDataURL('image/png');
   photo.setAttribute('src', data);
-  console.log(data);
 }
 
 // detona la funcion de captura de imagen
@@ -82,7 +81,7 @@ registerBtn.addEventListener('click', sendData = () =>{
     let name = inputName.value;
     let email = inputEmail.value;
     let clock = date;
-    let picture = data;
+
   
     // Add a new document with a generated id.
     db.collection('newVisitor').add({
@@ -91,8 +90,7 @@ registerBtn.addEventListener('click', sendData = () =>{
       host,
       name,
       email,
-      clock,
-      picture
+      clock
     })
       .then(function(docRef) {
         newDoc();
