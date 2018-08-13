@@ -10,7 +10,7 @@ clock.innerHTML = date.toLocaleString();
 
 // Captura de fotografia
 
-var streaming = false,
+var streaming = false, // Tomamos los elementos HTML
   video = document.querySelector('#video'),
   canvas = document.querySelector('#canvas'),
   photo = document.querySelector('#photo'),
@@ -18,11 +18,11 @@ var streaming = false,
   width = 320,
   height = 0;
 
-navigator.getMedia = (navigator.getUserMedia ||
+navigator.getMedia = (navigator.getUserMedia || // Tomamos la imagen de la camara comprobando cual navegador es
                          navigator.webkitGetUserMedia ||
                          navigator.mozGetUserMedia ||
                          navigator.msGetUserMedia);
-
+// Esta funcion da un video sin audio
 navigator.getMedia(
   {
     video: true,
@@ -41,7 +41,7 @@ navigator.getMedia(
     console.log('An error occured! ' + err);
   }
 );
-
+// Configiramos el tamaño de la foto
 video.addEventListener('canplay', function(ev) {
   if (!streaming) {
     height = video.videoHeight / (video.videoWidth / width);
@@ -52,15 +52,18 @@ video.addEventListener('canplay', function(ev) {
     streaming = true;
   }
 }, false);
-
+ 
+// Obtiene dimensiones y convierte imagen a png
 function takepicture() {
   canvas.width = width;
   canvas.height = height;
   canvas.getContext('2d').drawImage(video, 0, 0, width, height);
   var data = canvas.toDataURL('image/png');
   photo.setAttribute('src', data);
+  console.log(data);
 }
 
+// detona la funcion de captura de imagen
 startbutton.addEventListener('click', function(ev) {
   takepicture();
   ev.preventDefault();
@@ -79,7 +82,7 @@ registerBtn.addEventListener('click', sendData = () =>{
     let name = inputName.value;
     let email = inputEmail.value;
     let clock = date;
-
+    let picture = data;
   
     // Add a new document with a generated id.
     db.collection('newVisitor').add({
@@ -88,7 +91,8 @@ registerBtn.addEventListener('click', sendData = () =>{
       host,
       name,
       email,
-      clock
+      clock,
+      picture
     })
       .then(function(docRef) {
         newDoc();
