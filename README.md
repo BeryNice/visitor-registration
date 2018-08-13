@@ -32,6 +32,7 @@ Objetivos secundarios:
 * Saber el promedio de usuarios visitantes que se reciben cada día
 
 ## Problemática detectada
+
 * Uno de los mayores problemas en la gestión de visitantes dentro de un coworking es la gran afluencia de visitantes que representa un reto para la organización.
 * Proceso de registro sencillo pero ineficiente al momento de querer acceder a una visita específica en casos de afectación a la seguridad del lugar
 * Una vez almacenados los libros de visita pueden ocupar un gran espacio
@@ -47,11 +48,9 @@ Objetivos secundarios:
 
 ![Benchmark-registro](src/assets/images/benchmark-registro.png)
 
-
 ## Quién utiliza el registro de visitantes
 
 ### Tipos de Usuarios del Coworking
-
 
 #### Usuarios visitantes
 
@@ -59,8 +58,7 @@ Objetivos secundarios:
 * **Postulantes a puestos de empleo** Acuden a entrevistas de trabajo
 
 | Puntos débiles        | Desafíos cotidianos           |
-| -------------         |:-------------:| 
-
+| -------------         |:-------------:|
 
 #### Usuarios Facilitadores
 
@@ -92,15 +90,16 @@ Se realizaron algunas entrevistas con usuarios encargados de solicitar y verific
 Diseño simple e intuitivo, sin pasos complicados
 Sobre fondos blancos que permitan una correcta lectura de la información y que no distraigan la atención de la tarea a realizar, elementos simples y minimalistas
 
-
 ## Proceso de ideación
 
 ### Sketches Iniciales
+
 ![sketches-iniciales](src/assets/images/sketches-iniciales.jpg)
 
-
 ### Prototipo Figma
+
 [prototipo inicial sprint 1](https://www.figma.com/proto/G3asB4JYfGdEuQuRWx917NRi/Propuestas-iniciales?node-id=1%3A2&scaling=scale-down)
 
 ### Testing con usuarios
+
 ![testing-iniciales](src/assets/images/testing-iniciales.jpg)
