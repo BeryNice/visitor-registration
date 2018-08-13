@@ -10,7 +10,7 @@ clock.innerHTML = date.toLocaleString();
 
 // Captura de fotografia
 
-var streaming = false,
+var streaming = false, // Tomamos los elementos HTML
   video = document.querySelector('#video'),
   canvas = document.querySelector('#canvas'),
   photo = document.querySelector('#photo'),
@@ -18,11 +18,11 @@ var streaming = false,
   width = 320,
   height = 0;
 
-navigator.getMedia = (navigator.getUserMedia ||
+navigator.getMedia = (navigator.getUserMedia || // Tomamos la imagen de la camara comprobando cual navegador es
                          navigator.webkitGetUserMedia ||
                          navigator.mozGetUserMedia ||
                          navigator.msGetUserMedia);
-
+// Esta funcion da un video sin audio
 navigator.getMedia(
   {
     video: true,
@@ -41,7 +41,7 @@ navigator.getMedia(
     console.log('An error occured! ' + err);
   }
 );
-
+// Configiramos el tamaño de la foto
 video.addEventListener('canplay', function(ev) {
   if (!streaming) {
     height = video.videoHeight / (video.videoWidth / width);
@@ -53,6 +53,7 @@ video.addEventListener('canplay', function(ev) {
   }
 }, false);
 
+// Obtiene dimensiones y convierte imagen a png
 function takepicture() {
   canvas.width = width;
   canvas.height = height;
@@ -61,6 +62,7 @@ function takepicture() {
   photo.setAttribute('src', data);
 }
 
+// detona la funcion de captura de imagen
 startbutton.addEventListener('click', function(ev) {
   takepicture();
   ev.preventDefault();
