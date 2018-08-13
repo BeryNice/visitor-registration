@@ -9,65 +9,53 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
     crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
   <link rel="stylesheet" href="../css/main.css">
   <title>Registro de Visitantes</title>
 </head>
 
 <body>
-    <div class="container-fluid">
-        <header>
-            <div class="row">
-                <div class="col align-self-start">
-                    Logo Empresa
-                </div>
-                <div class="col align-self-end" id="date">
+  <div class="container-fluid">
+    <header>
+      <div class="row">
+        <div class="col align-self-start">
+          Logo Empresa
+        </div>
+        <div class="col align-self-end" id="date">
 
-                </div>
-            </div>
-        </header>
+        </div>
+      </div>
+    </header>
 
-        <h3 class="mb-5">Registro de Visitantes</h3>
-        <form id="formInput">
-            <div class="form-row">
-                 <div class="col-md-7">
-                    <p>Datos del visitante</p>
-                </div>
-                <div class="form-group col-md-6">
-                    <label for="inputName">Nombre Completo</label>
-                    <input type="text" class="form-control" id="inputName">
-                </div>
+    <h3 class="mb-5">Registro de Visitantes</h3>
+    <form id="formInput">
+      <div class="form-row">
+        <div class="col-md-7">
+          <p>Datos del visitante</p>
+        </div>
+        <div class="form-group col-md-6">
+          <label for="inputName">Nombre Completo</label>
+          <input type="text" class="form-control" id="inputName">
+        </div>
 
-                <div class="form-group col-md-6">
-                    <label for="inputEmail">Correo electrónico</label>
-                    <input type="email" class="form-control" id="inputEmail">
-                </div>
-                <div class="col-md-10">
-                    <p>Datos del anfitrion</p>
-                </div>
-                <div class="form-group col-md-3">
-                    <label for="inputFloor">Piso</label>
-                    <input type="number" class="form-control" id="inputFloor">
-                </div>
-                <div class="form-group col-md-3">
-                    <label for="inputCompany">Empresa</label>
-                    <input type="text" class="form-control" id="inputCompany">
-                </div>
+        <div class="form-group col-md-6">
+          <label for="inputEmail">Correo electrónico</label>
+          <input type="email" class="form-control" id="inputEmail">
+        </div>
+        <div class="col-md-10">
+          <p>Datos del anfitrion</p>
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputFloor">Piso</label>
+          <input type="number" class="form-control" id="inputFloor">
+        </div>
+        <div class="form-group col-md-3">
+          <label for="inputCompany">Empresa</label>
+          <input type="text" class="form-control" id="inputCompany">
+        </div>
 
-                <div class="form-group col-md-3">
-                    <label for="inputHost">Persona a quien visita</label>
-                    <input type="text" class="form-control" id="inputHost">
-                </div>
-                <div id="photo">
-                    <video id="video"></video>
-                    <button id="startbutton">Captura tu foto</button>
-                    <canvas id="canvas"></canvas>
-                    <img src="" id="photo" alt="">
-                </div>
-
-            </div>
-        </form>
-
-
+<<<<<<< HEAD
         <footer>
             <div class="row mt-5">
                 <div class="col">
@@ -79,9 +67,39 @@
             </div>
         </footer>
     </div>
+=======
+        <div class="form-group col-md-3">
+          <label for="inputHost">Persona a quien visita</label>
+          <input type="text" class="form-control" id="inputHost">
+        </div>
+        <div id="photo">
+          <video id="video"></video>
+          <button id="startbutton">
+            <i class="fas fa-camera"></i> Captura tu foto</button>
+          <canvas id="canvas"></canvas>
+          <img id="photo2" alt="">
+        </div>
+
+      </div>
+    </form>
+>>>>>>> upstream/master
 
 
+    <footer>
+      <div class="row mt-5">
+        <div class="col">
+          <a class="btn btn-primary" href="../index.html">
+            <i class="fas fa-angle-left"></i> Anterior</a>
+        </div>
+        <div class="col">
+          <a class="btn btn-primary" href="#" id="registerBtn">Registrar
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
 
+<<<<<<< HEAD
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
     <!-- Optional JavaScript -->
@@ -94,6 +112,21 @@
         crossorigin="anonymous"></script>
     <script src="../js/credentials.js"></script>
     <script src="../js/print.js"></script>
+=======
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="../js/credentials.js"></script>
+  <script src="../js/register.js"></script>
+>>>>>>> upstream/master
 </body>
 
 </html>
