@@ -11,5 +11,11 @@
     "js"
   ],
   "author": "Linda Tableros, Génesis Mauries, Berenice Lemus",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "moment": "^2.22.2",
+    "sinon": "^6.1.5"
+  }
 }
