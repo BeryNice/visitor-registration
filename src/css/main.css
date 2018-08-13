@@ -16,7 +16,7 @@ body{
 
   
   
-.form-control {
+/* .form-control {
     display: block;
     width: 100%;
     height: calc(2.25rem + 2px);
@@ -30,21 +30,21 @@ body{
     border: 0px 0px 2px 0px;
     box-shadow: none;
 }
-
+ */
 
 /* INPUTS */
 
 /* LOGIN */
 
-.minimal-input::placeholder{
-    color: #ffffff;
+.form-control::placeholder{
+    color: #333333;
 }
 
-.minimal-input{
-    color :#ffffff ;
+.form-control{
+    color :#333333 ;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #ffffff;
+    border-bottom: 1px solid #333333;
     border-radius: 0;
     outline: none;
     height: 3rem;
@@ -74,18 +74,20 @@ body{
 .btn-primary{
     background: #5C636B;
     border: #5C636B ;
-    border-radius: 18px;
+    border-radius: 15px;
 }
 
 .btn-primary:not(:disabled):not(.disabled):active,
 .btn-primary:not(:disabled):not(.disabled):hover
 {
-    background-color: #5D3874;
-    border-radius: 18px;
-    border-color: #5D3874;
+    background-color: #999;
+    border-radius: 15px;
+    border-color: #999;
 }
 
-
+a{
+    color:#333;
+}
 
 /* MEDIA QUERYS */ 
 /* Extra small devices (portrait phones, less than 576px) */
