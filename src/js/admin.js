@@ -18,10 +18,10 @@ btnLogin.addEventListener('click', event => {
 
 const printVisitorsTable = document.getElementById('table');
 
-db.collection('newVisitor').onSnapshot((querySnapshot) => {
+const templateVisitors = db.collection('newVisitor').onSnapshot((querySnapshot) => {
   printVisitorsTable.innerHTML = '';
   querySnapshot.forEach((doc) => {
-    printVisitorsTable.innerHTML += `
+    printVisitorsTable.innerHTML += `<tr>
     <td>${doc.data().clock}</td>
     <td>${doc.data().name}</td>
     <td>${doc.data().email}</td>
@@ -31,3 +31,33 @@ db.collection('newVisitor').onSnapshot((querySnapshot) => {
   </tr>`;
   });
 });
+
+//funcion para filtrar libros
+const searchVisitors = document.forms['search-visitor'].querySelector('input');
+
+searchVisitors.addEventListener('keyup', function(e) {
+  const term = e.target.value.toLowerCase();
+  const visitors = printVisitorsTable.getElementsByTagName('tr');
+  Array.from(visitors).forEach(function(visitor){
+   const certainVisitor = visitors.textContent;
+   if(certainVisitor.toLowerCase().indexOf(term) != -1){
+     certainVisitor.style.display = 'block';
+   } else {
+    certainVisitor.style.display = 'none'
+   }
+  })
+})
+
+// const listeneres = (array) => {
+//   search.addEventListener('keyup', () => {
+//       if (search.value.trim().length > 0) {
+//           const searching = search.value.toLowerCase();
+//           const filteredVisitors = array.filter((doc) => {
+//               return doc.name.toLowerCase().indexOf(searching) >= 0;
+//           });
+
+//           templateVisitors(filteredVisitors);
+//       }
+//   });
+// }
+
