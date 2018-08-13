@@ -74,16 +74,16 @@ const registerBtn = document.getElementById('registerBtn');
 
 // generando funcion para enviar datos a base de datos(Firestore)
 registerBtn.addEventListener('click', sendData = () =>{
-  if (confirm('¿Tus datos son correctos?') === true) {
-    let floor = inputFloor.value;
-    let company = inputCompany.value;
-    let host = inputHost.value;
-    let name = inputName.value;
-    let email = inputEmail.value;
-    let clock = date;
-    if (host === '' || company === '' || name === '' || email === '') {
-      alert('¡Todos los campos deben estar llenos!');
-    } else {
+  let floor = inputFloor.value;
+  let company = inputCompany.value;
+  let host = inputHost.value;
+  let name = inputName.value;
+  let email = inputEmail.value;
+  let clock = date;
+  if (host === '' || company === '' || name === '' || email === '') {
+    alert('¡Todos los campos deben estar llenos!');
+  } else {
+    if (confirm('¿Tus datos son correctos?') === true) {
     // Add a new document with a generated id.
       db.collection('newVisitor').add({
         floor,
