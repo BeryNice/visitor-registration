@@ -2,6 +2,10 @@
   margin: 3%;
 }
 
+#logoBig { 
+  margin: 8%
+}
+
 .btn {
   font-weight: 500;
 }
