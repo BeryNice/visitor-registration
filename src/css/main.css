@@ -13,6 +13,32 @@ body {
   width: 14%;
 }
   
+/* BUTTON */
+
+.btn-primary{
+    background-color: #5C636B;
+    border-radius: 18px;
+    border-color: #5C636B;
+}
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):hover
+{
+    background-color: #999999;
+    border-radius: 18px;
+    border-color: #999999;
+}
+
+
+a{
+    color:#cccccc;
+}
+
+a:hover{
+    color: #999999;
+}
+
+
 /* INPUTS */
 .form-control::placeholder{
     color: #333333;
@@ -22,7 +48,7 @@ body {
     color :#333333 ;
     background-color: transparent;
     border: none;
-    border-bottom: 1px solid #333333;
+    border-bottom: 2px solid #5C636B;
     border-radius: 0;
     outline: none;
     height: 3rem;
