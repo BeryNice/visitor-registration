@@ -1,41 +1,19 @@
-body{
-    color: #333;
+body {
+  color: #333;
 }
 
-
-.v-align{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.v-align {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .logo {
-    width:14%;
+  width: 14%;
 }
-
   
-  
-/* .form-control {
-    display: block;
-    width: 100%;
-    height: calc(2.25rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border-color: #495057;
-    border: 0px 0px 2px 0px;
-    box-shadow: none;
-}
- */
-
 /* INPUTS */
-
-/* LOGIN */
-
 .form-control::placeholder{
     color: #333333;
 }
@@ -61,55 +39,22 @@ body{
     transition: box-shadow .3s, border .3s;
     transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
 }
-
-
-
-
-/*  BUTTONS */
-
-.btn {
-    font-weight: 500;
-}
-
-.btn-primary{
-    background: #5C636B;
-    border: #5C636B ;
-    border-radius: 15px;
-}
-
-.btn-primary:not(:disabled):not(.disabled):active,
-.btn-primary:not(:disabled):not(.disabled):hover
-{
-    background-color: #999;
-    border-radius: 15px;
-    border-color: #999;
-}
-
-a{
-    color:#333;
-}
-
-/* MEDIA QUERYS */ 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { 
 
-}
+@media (max-width: 575.98px) {}
 
 /* Small devices (landscape phones, 576px and up)*/
-@media (min-width: 576px) and (max-width: 767.98px) { 
 
-}
+@media (min-width: 576px) and (max-width: 767.98px) {}
 
 /* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) and (max-width: 991.98px) { 
 
- }
+@media (min-width: 768px) and (max-width: 991.98px) {}
 
 /* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) { 
-}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
 
 /* Extra large devices (large desktops, 1200px and up)*/
-@media (min-width: 1200px) { 
 
-}
+@media (min-width: 1200px) {}
