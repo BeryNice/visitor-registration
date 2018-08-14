@@ -142,7 +142,8 @@ Como cliente incógnito fuimos a visitar a COW Tonalá para poder experimentar s
 
 ## Criterios de diseño
 
-El diseño se visualiza simple e intuitivo, sin pasos complicados, sobre fondos blancos que permitan una correcta lectura de la información y que no distraigan la atención de la tarea a realizar, se compone de elementos simples y minimalistas que permitan adecuarse a la identidad de cualquier coworking, por ello se ha creado una identidad con "TU LOGO AQUU" para indicar que puede ser altamente persoanilzado y adaptarse a los colores de la marca.
+El diseño se visualiza simple e intuitivo, sin pasos complicados, sobre fondos blancos que permitan una correcta lectura de la información y que no distraigan la atención de la tarea a realizar, se compone de elementos simples y minimalistas que permitan adecuarse a la identidad de cualquier coworking, por ello se ha creado una identidad con "TU LOGO AQUI" para indicar que puede ser altamente persoanilzado y adaptarse a los colores de la marca.
+
 ![documentacion-diseño](src/assets/images/personalizable.gif)
 
 
