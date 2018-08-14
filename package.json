@@ -4,7 +4,12 @@
   "description": "registro de visitamtes\u001b[D\u001b[D\u001b[n\u001b[C\u001b[C\u001b[C, npm",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "htmlhint": "htmlhint src/*.html test/*.html",
+    "eslint": "eslint --ext .js src/ test/",
+    "pretest": "npm run eslint && npm run htmlhint",
+    "test-browser": "opener ./test/index.html",
+    "test-node": "nyc mocha ./test/headless.js && nyc report --reporter=html",
+    "test": "npm run test-node && npm run test-browser"
   },
   "keywords": [
     "Firebase",
