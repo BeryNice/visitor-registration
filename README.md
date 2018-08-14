@@ -1,5 +1,4 @@
 # Registro de Visitantes
-
 ---
 
 ## Preámbulo
@@ -65,13 +64,16 @@ Se analizaron algunos otros formatos de registro de visitas como referencia en e
 
 #### Usuarios visitantes
 
+![Usuarios-principales](src/assets/images/proto-personas.png)
+
+
 * **Socios comerciales** que se reúnen con usuarios de coworking, son jóvenes tienen distintas actividades agendadas durante el día, son nativos digitales tienen un smartphone siempre disponible
 * **Postulantes a puestos de empleo** Acuden a entrevistas de trabajo
 
-| Puntos débiles        | Desafíos cotidianos           |
-| -------------         |:-------------:|
 
 #### Usuarios Facilitadores
+
+![Usuarios-facilitadores](src/assets/images/proto-personas2.png)
 
 * Personal de Seguridad/Vigilancia
 * Recepcionistas
@@ -129,10 +131,16 @@ Se realizaron algunas entrevistas con usuarios encargados de solicitar y verific
 
 ## Criterios de diseño
 
-Diseño simple e intuitivo, sin pasos complicados
-Sobre fondos blancos que permitan una correcta lectura de la información y que no distraigan la atención de la tarea a realizar, elementos simples y minimalistas
+El diseño se visualiza simple e intuitivo, sin pasos complicados, sobre fondos blancos que permitan una correcta lectura de la información y que no distraigan la atención de la tarea a realizar, se compone de elementos simples y minimalistas que permitan adecuarse a la identidad de cualquier coworking, por ello se ha creado una identidad con "TU LOGO AQUU" para indicar que puede ser altamente persoanilzado y adaptarse a los colores de la marca.
+![documentacion-diseño](src/assets/images/personalizable.gif)
+
+
 
 ## Proceso de ideación
+
+![Flujo-de-informacion](src/assets/images/flujo.png)
+
+![bocetos-flujo](src/assets/images/bocetos-navegacion.png)
 
 ### Sketches Iniciales
 
@@ -140,11 +148,23 @@ Sobre fondos blancos que permitan una correcta lectura de la información y que 
 
 ### Prototipo Figma
 
-[prototipo inicial sprint 1](https://www.figma.com/proto/G3asB4JYfGdEuQuRWx917NRi/Propuestas-iniciales?node-id=1%3A2&scaling=scale-down)
+[prototipo inicial test A](https://www.figma.com/proto/G3asB4JYfGdEuQuRWx917NRi/Propuestas-iniciales?node-id=1%3A2&scaling=scale-down)
+
+[prototipo inicial test B](https://www.figma.com/proto/fcRAtXsfXP3GyxnNjGg65w/Propuestas-iniciales-(Test-B)?scaling=scale-down&node-id=1%3A2)
+
+[prototipo alta fidelidad](https://www.figma.com/proto/PitEONoP9h94PZmqmKNeAf/Prototipo-Alta-Fidelidad?node-id=1%3A2&scaling=scale-down)
+
 
 ### Testing con usuarios
 
+De los testing iniciales se obtuvieron algunas observacones de los usuarios indicando que sería mejor cambiar el órden de los campos a llenar iniciando con los datos personales del visitante, seguidos por los datos de la persona visitada, así como indicar con títulos a qué se refería cada bloque de datos
 ![testing-iniciales](src/assets/images/testing-iniciales.jpg)
+
+
+Para probar si era ideal poner el botón de acceso para administradores en la página de registro se hicieron pruebas A/B con usuarios, donde concluimos que podríamos colocar el link de login para administradores en la parte inferior de la ventana pero con un tono gris que le permitiera no ser tan visible. La mitad de los usuarios dijeron no haberlo percibido y la segunda mitad comentaron que les dió curiosidad darle click sin embargo nadie clickeo sobre el link. Por lo que concluimos que colocar el link de login para los administradores en la página de registro de visitantes les facilitaría acceder de una manera más fácil. 
+![testing-iniciales](src/assets/images/testing-ab.jpg)
+
+
 
 ## Boilerplate
 
