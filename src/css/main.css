@@ -65,6 +65,11 @@ a:hover{
     transition: box-shadow .3s, border .3s;
     transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
 }
+
+#registerBtn {
+  float: right;
+} 
+
 /* Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {}
