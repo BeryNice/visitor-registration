@@ -12,74 +12,63 @@ body {
 .logo {
   width: 14%;
 }
+  
+/* BUTTON */
 
-.form-control {
-  display: block;
-  width: 100%;
-  height: calc(2.25rem + 2px);
-  padding: .375rem .75rem;
-  font-size: 1rem;
-  line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
-  background-clip: padding-box;
-  border-color: #495057;
-  border: 0px 0px 2px 0px;
-  box-shadow: none;
+.btn-primary{
+    background-color: #5C636B;
+    border-radius: 18px;
+    border-color: #5C636B;
 }
+
+.btn-primary:not(:disabled):not(.disabled):active,
+.btn-primary:not(:disabled):not(.disabled):hover
+{
+    background-color: #999999;
+    border-radius: 18px;
+    border-color: #999999;
+}
+
+
+a{
+    color:#cccccc;
+}
+
+a:hover{
+    color: #999999;
+}
+
 
 /* INPUTS */
-
-/* LOGIN */
-
-.minimal-input::placeholder {
-  color: #ffffff;
+.form-control::placeholder{
+    color: #333333;
 }
 
-.minimal-input {
-  color: #ffffff;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #ffffff;
-  border-radius: 0;
-  outline: none;
-  height: 3rem;
-  width: 100%;
-  font-size: 16px;
-  margin: 0 0 8px 0;
-  padding: 0;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box;
-  -webkit-transition: border .3s, -webkit-box-shadow .3s;
-  transition: border .3s, -webkit-box-shadow .3s;
-  transition: box-shadow .3s, border .3s;
-  transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
+.form-control{
+    color :#333333 ;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #5C636B;
+    border-radius: 0;
+    outline: none;
+    height: 3rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 8px 0;
+    padding: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-transition: border .3s, -webkit-box-shadow .3s;
+    transition: border .3s, -webkit-box-shadow .3s;
+    transition: box-shadow .3s, border .3s;
+    transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
 }
 
-/*  BUTTONS */
-
-.btn {
-  font-weight: 500;
-}
-
-.btn-primary {
-  background: #5C636B;
-  border: #5C636B;
-  border-radius: 18px;
-}
-
-#registerBtn{
+#registerBtn {
   float: right;
-}
-.btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled):hover {
-  background-color: #5D3874;
-  border-radius: 18px;
-  border-color: #5D3874;
-}
-
-/* MEDIA QUERYS */
+} 
 
 /* Extra small devices (portrait phones, less than 576px) */
 
