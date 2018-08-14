@@ -2,6 +2,14 @@
 
 ---
 
+## Preámbulo
+
+En los últimos años el concepto novedoso, el Coworking, un espacio de trabajo compartido, 
+
+## Introducción
+
+## Objetivos
+
 ## Problemática Registro de visitantes
 
 ### Análisis del proceso de registro manual
@@ -48,6 +56,9 @@ Objetivos secundarios:
 
 ![Benchmark-registro](src/assets/images/benchmark-registro.png)
 
+Se analizaron algunos otros formatos de registro de visitas como referencia en el diseño de los priméros prototipos.
+![Referencias](src/assets/images/referencias.png)
+
 ## Quién utiliza el registro de visitantes
 
 ### Tipos de Usuarios del Coworking
@@ -72,6 +83,37 @@ Objetivos secundarios:
 * Profesionistas independientes
 * Startups
 * Empresas pequeñas pueden compartir un espacio de trabajo
+
+### Historias de Usuarios
+
+|Historia de Usuario: Visitante|
+|---|
+|Yo como visitante quisiera poder registrar mi visita de manera rápida sin que me soliciten tanta información, poder avisar a la persona que visito que ya me encuentro en las instalaciones y que espero a que me reciba pronto. |
+
+|Historia de Usuario: Recepcionista|
+|---|
+|-Como Recepcionista quiero que haya botones de regresar y continuar en la aplicación, para que los visitantes que no están acostumbrados a la tecnología, no se frustren al intentar registrarse.
+-Yo como Recepcionista, quisiera poder tener una manera más eficaz de registrar los visitantes, sin que se formen largas filas por el tiempo que le toma a cada visitante registrarse en el libro de visitas manualmente.|
+
+|Historia de Usuario: Vigilante|
+|---|
+|-Yo como vigilante/seguridad en un coworking quiero controlar la entrada de los visitantes
+-Yo como vigilante/seguridad de un coworking quiero ver la hora de entrada de los visitantes
+-Yo como vigilante/seguridad de un coworking quiero acceder a los datos de todos los visitantes
+-Yo como vigilante/seguridad de un coworking quiero tener una clave de acceso a los datos de los visitantes
+-Yo como vigilante/seguridad de un coworking quiero cerrar la sesión para que los datos de los visitantes no estén expuestos.|
+
+|Historia de Usuario: Inquilino|
+|---|
+|-Yo como inquilino quiero que mis visitantes se registren
+-Yo como inquilino quiero ser notificado cuando alguien me espera en recepción
+-Yo como inquilino quiero recibir un reporte de los visitantes por dia o mes a mi oficina
+-Yo como inquilino quiero que exista una recopilación de los visitantes en mi entorno de trabajo|
+
+|Historia de Usuario: Administrador|
+|---|
+|Yo como Administrador, quisiera poder controlar la lista de visitas de una manera más esquematizada y práctica, aparte de poder identificar el rostro de los visitantes a través de fotografías previamente tomadas, por cuestiones de seguridad.
+Como Recepcionista, quiero tener la seguridad de que ningún visitante que esté usando la aplicación, pueda ingresar a las páginas de acceso exclusivo para la administración.|
 
 ## Técnicas usadas en esta fase
 
@@ -103,3 +145,117 @@ Sobre fondos blancos que permitan una correcta lectura de la información y que 
 ### Testing con usuarios
 
 ![testing-iniciales](src/assets/images/testing-iniciales.jpg)
+
+## Boilerplate
+
+```text
+./
+│
+├── src
+│   ├── css
+│   │   └── main.css
+│   ├── assets
+|   |   └── images
+|   |       ├── benchmark-registro.png
+|   |       ├── documentacion-investigacion.png
+|   |       ├── documentacion-investigacion2.png
+|   |       ├── logo.png
+|   |       ├── sketches-iniciales.png
+|   |       └── testing-iniciales.jpeg
+|   ├──js
+|   |   ├── admin.js
+|   |   ├── credentials.js
+|   |   └── register.js
+│   ├── views
+│   |   ├── admin.html
+│   |   ├── print.html
+│   |   └── register.html
+│   └── index.html
+├── test
+|   ├── data.spec.js
+|   ├── headless.js
+|   ├── index.html
+|   └── test.js
+├── .editorconfig
+├── .eslintrc
+├── .gitignore
+├── package.json
+├── package.json
+└── README.md
+
+```
+
+## Tech y Framework implementado
+
+* Javascript
+* HTML
+* CSS
+* Shell/Bash
+* Bootstrap 4
+* Figma
+* Awesome Fonts
+* Node/NPM
+* GitHub
+* Visual Studio Code
+* Firebase
+* Firestore
+
+## Tests
+
+* ESlint
+* HTMLhint
+* Mocha
+
+Para poder realizar los Test seguir estos pasos:
+
+1. Descargar e instalar Visual Studio Code [aqui](https://code.visualstudio.com/download)
+2. Descargar e instalar Git Bash [aquí](https://git-scm.com/downloads)
+3. Descarcar e instalar Node.js [aquí](https://nodejs.org/en/download/)
+4. Abrir la terminal de Git e ingresar este comando para instalar la dependencia:
+
+```javascript
+npm install -g
+```
+
+5. Realizar el siguiente comando para correr los test(ESlint, htmlhint, mocha):
+
+```javascript
+npm run test
+```
+
+6. Posteriormente se abre el index.html en la carpeta TEST para poder visualizar las pruebas en el navegador.
+
+## ¿Cómo se usa?
+
+1. Ingresar a la aplicación: <https://berynice.github.io/visitor-registration/src/index.html)>
+2. En la página principal: Para entrar en la sección del registro de visitas, dar click en botón llamado "Registrar Visita". Para entrar en la sección de administración, dar click en el link hasta abajo, en medio, llamado "Log in"
+3. Para acceder al Log in, utilizar los siguientes datos:
+* Nombre de Usuario: admin
+* Contraseña: admin
+
+## Contribuir
+
+1. Descargar e instalar Visual Studio Code [aqui](https://code.visualstudio.com/download)
+2. Descargar e instalar Git Bash [aquí](https://git-scm.com/downloads)
+3. Descargar e instalar Node.js [aquí](https://nodejs.org/en/download/)
+4. Forkear el repositorio [aqui](https://berynice.github.io/visitor-registration/src/index.html)
+5. Abrir la Terminal de Git Bash en la locación desdeada y ejecutar el siguiente comando para clonar el repositorio:
+
+```javascript
+git clone https://github.com/BeryNice/visitor-registration.git
+```
+
+6. Instalar npm.
+7. Solicitar con un Pull Request al repositorio Master para poder dar unir la contribución.
+
+Clonarlo el fork a la computadora donde se vaya a trabajar
+Tener instalado Node.js
+Instalar las dependencias del proyecto con el comando npm install
+Archivos
+El boilerplate de este proyecto contiene la siguiente estructura de archivos, así como toda la configuración de dependencias y tests:
+
+## Desarrolladoras
+
+* [Berenice Lemus González](https://github.com/BeryNice)
+* [Génesis Mauries Enríquez](https://github.com/GenesisMauries)
+* [Linda Tableros Gessner](https://github.com/lindatablerosgessner)
